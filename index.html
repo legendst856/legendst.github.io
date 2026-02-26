@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colegio Jorge Tadeo Lozano | Educación en Duitama</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Poppins',sans-serif;
+background:#0a192f;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+header{
+position:fixed;
+width:100%;
+padding:20px 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(10,25,47,0.9);
+z-index:1000;
+}
+
+header h2{
+font-family:'Playfair Display',serif;
+color:#d4af37;
+}
+
+nav a{
+color:white;
+margin-left:30px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(10,25,47,0.8),rgba(10,25,47,0.8)),
+url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Duitama_Colombia.jpg') center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:60px;
+color:#d4af37;
+}
+
+.hero p{
+max-width:700px;
+margin-top:20px;
+font-size:18px;
+opacity:0.9;
+}
+
+/* SECTIONS */
+section{
+padding:120px 80px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+font-family:'Playfair Display',serif;
+font-size:36px;
+margin-bottom:40px;
+color:#d4af37;
+text-align:center;
+}
+
+/* TWO COLUMN */
+.row{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+align-items:center;
+}
+
+.row img{
+width:100%;
+max-width:500px;
+border-radius:15px;
+}
+
+.row div{
+flex:1;
+}
+
+/* STATS */
+.stats{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+gap:30px;
+margin-top:40px;
+}
+
+.stat{
+background:#112240;
+padding:40px;
+border-radius:15px;
+text-align:center;
+flex:1;
+min-width:200px;
+}
+
+.stat h3{
+font-size:45px;
+color:#d4af37;
+}
+
+/* TIMELINE */
+.timeline{
+border-left:3px solid #d4af37;
+padding-left:30px;
+}
+
+.timeline div{
+margin-bottom:30px;
+}
+
+/* DOCENTES */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#112240;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+/* FORM */
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:auto;
+}
+
+input,select{
+padding:12px;
+border-radius:8px;
+border:none;
+}
+
+button{
+padding:12px;
+background:#d4af37;
+border:none;
+font-weight:bold;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#f1c40f;
+}
+
+/* MAP */
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:15px;
+margin-top:20px;
+}
+
+/* FOOTER */
+footer{
+background:#020c1b;
+padding:60px;
+text-align:center;
+margin-top:80px;
+}
+
+/* FLOAT BUTTON */
+.float-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#d4af37;
+color:black;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+@media(max-width:768px){
+.hero h1{font-size:35px;}
+.row{flex-direction:column;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Colegio Jorge Tadeo Lozano</h2>
+<nav>
+<a href="#historia">Historia</a>
+<a href="#datos">Datos</a>
+<a href="#docentes">Docentes</a>
+<a href="#inscripcion">Inscripción</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Excelencia Académica en Duitama</h1>
+<p>Institución privada con 200 estudiantes, comprometida con la formación integral y el desarrollo humano.</p>
+</section>
+
+<section id="historia">
+<h2>Nuestra Historia</h2>
+<div class="row">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Duitama_Boyac%C3%A1.jpg">
+<div>
+<p>El colegio ha sido referente educativo en Duitama, destacándose por su calidad académica y acompañamiento personalizado.</p>
+</div>
+</div>
+</section>
+
+<section id="datos">
+<h2>Datos Institucionales</h2>
+<div class="stats">
+<div class="stat"><h3>200</h3><p>Estudiantes</p></div>
+<div class="stat"><h3>18</h3><p>Docentes</p></div>
+<div class="stat"><h3>20</h3><p>Años de Servicio</p></div>
+</div>
+</section>
+
+<section>
+<h2>Línea de Tiempo</h2>
+<div class="timeline">
+<div><strong>2005</strong> - Fundación de la institución.</div>
+<div><strong>2012</strong> - Ampliación académica.</div>
+<div><strong>2020</strong> - Innovación tecnológica.</div>
+</div>
+</section>
+
+<section id="docentes">
+<h2>Equipo Docente</h2>
+<div class="grid">
+<div class="card">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<h3>Área Ciencias</h3>
+</div>
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<h3>Humanidades</h3>
+</div>
+<div class="card">
+<img src="https://randomuser.me/api/portraits/women/68.jpg">
+<h3>Orientación</h3>
+</div>
+</div>
+</section>
+
+<section id="inscripcion">
+<h2>Inscripción</h2>
+<form onsubmit="event.preventDefault();alert('Solicitud enviada correctamente');">
+<input type="text" placeholder="Nombre completo" required>
+<input type="email" placeholder="Correo electrónico" required>
+<select required>
+<option value="">Seleccione nivel</option>
+<option>Primaria</option>
+<option>Secundaria</option>
+</select>
+<button>Enviar solicitud</button>
+</form>
+</section>
+
+<section id="contacto">
+<h2>Ubicación</h2>
+<iframe src="https://www.google.com/maps?q=Duitama+Boyaca+Colombia&output=embed"></iframe>
+</section>
+
+<footer>
+<p>Duitama - Boyacá - Colombia</p>
+<p>© 2026 Colegio Jorge Tadeo Lozano</p>
+</footer>
+
+<div class="float-btn">Contáctanos</div>
+
+</body>
+</html>
